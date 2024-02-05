@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kering</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+    <div class="search-nav sticky w-[40px] flex flex-col gap-[20px]">
+        <div>
+            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.00006 12.2461C4.2427 12.2461 5.25006 11.2387 5.25006 9.99609C5.25006 8.75345 4.2427 7.74609 3.00006 7.74609C1.75742 7.74609 0.750061 8.75345 0.750061 9.99609C0.750061 11.2387 1.75742 12.2461 3.00006 12.2461Z" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.9999 5.5C16.2426 5.5 17.2499 4.49264 17.2499 3.25C17.2499 2.00736 16.2426 1 14.9999 1C13.7573 1 12.7499 2.00736 12.7499 3.25C12.7499 4.49264 13.7573 5.5 14.9999 5.5Z" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.9999 18.9961C16.2426 18.9961 17.2499 17.9887 17.2499 16.7461C17.2499 15.5035 16.2426 14.4961 14.9999 14.4961C13.7573 14.4961 12.7499 15.5035 12.7499 16.7461C12.7499 17.9887 13.7573 18.9961 14.9999 18.9961Z" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.0392 4.35156L4.96075 8.89563M4.96075 11.1016L13.0392 15.6456L4.96075 11.1016Z" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.36366 0.996094C6.90728 0.996094 5.4836 1.42796 4.27267 2.23708C3.06173 3.04621 2.11792 4.19624 1.56058 5.54176C1.00325 6.88728 0.857428 8.36786 1.14155 9.79625C1.42568 11.2247 2.12699 12.5367 3.15681 13.5665C4.18663 14.5964 5.4987 15.2977 6.92709 15.5818C8.35549 15.8659 9.83606 15.7201 11.1816 15.1628C12.5271 14.6054 13.6771 13.6616 14.4863 12.4507C15.2954 11.2397 15.7273 9.81607 15.7273 8.35969C15.7271 6.40678 14.9513 4.53389 13.5704 3.15298C12.1895 1.77206 10.3166 0.996218 8.36366 0.996094V0.996094Z" stroke="#666666" stroke-width="1.5" stroke-miterlimit="10"/>
+                <path d="M13.8573 13.8555L19 18.9981" stroke="#666666" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+            </svg>    
+        </div>
+        <div>
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5431 0.75C11.5 0.75 9.99999 3.75 9.99999 3.75C9.99999 3.75 8.49999 0.75 5.45687 0.75C2.98374 0.75 1.0253 2.81906 0.999991 5.28797C0.948428 10.4128 5.06546 14.0573 9.57812 17.1202C9.70253 17.2048 9.84952 17.2501 9.99999 17.2501C10.1505 17.2501 10.2975 17.2048 10.4219 17.1202C14.9341 14.0573 19.0511 10.4128 19 5.28797C18.9747 2.81906 17.0162 0.75 14.5431 0.75V0.75Z" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>    
+        </div>
+    </div>
+    <div class="header sticky top-0 z-[9999] bg-white">
+        <div class="container mx-auto w-[90%]">
+            <div class="justify-between items-center hidden xl:flex mx-auto">
+                <div class="price-lang flex items-center ">
+                    <div class="pr-[20px] text-[12px]">
+                        <h6>SHARE PRICE</h6>
+                        <h6>price</h6>
+                    </div>
+                    <div class="flex items-center">
+                        <h6 class="pr-[10px] text-[12px]">EN</h6>
+                        <div class="flex items-center relative">
+                            <span class="lang-arrow-button">></span>
+                            <div class="lang-nav overflow-hidden absolute left-[20px] top-[-15px]">
+                                <div class="lang-list-container">
+                                    <ul class="lang-nav-list text-[10px] flex gap-[10px] p-[20px] bg-dry-rose">
+                                        <li>ENGLISH</li>
+                                        <li>FRANCAIS</li>
+                                        <li>ITALIANO</li>
+                                        <li>CHINESE</li>
+                                        <li>JAPANESE</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-bar">
+                    <ul class="flex items-center text-[12px]">
+                        <li class="about-hover p-[30px]"><a href="./about/about.html">ABOUT</a></li>
+                        <li class="brands p-[30px]"><a href="">BRANDS</a></li>
+                        <li class="news p-[30px] hover:bg-dry-rose"><a href="./news/news.html">NEWS</a></li>
+                        <li class="investor-relations p-[30px] hover:bg-dry-rose"><a href="./investor-relation/investor-relation.html">INVESTOR RELATION</a></li>
+                        <li class="career p-[30px] hover:bg-dry-rose"><a href="./career/career.html">CAREER</a></li>
+                        <li class="client-portal p-[30px] hover:bg-dry-rose"><a href="">CLIENT PORTAL</a></li>
+                    </ul>
+                </div>
+                <div class="join-us text-[12px]">
+                    <span>Join us</span>
+                </div>
+            </div>
+        </div>
+
+         <!-- dropdown -->
+        <div class="about-hover about-menu hidden drop-down-menu bg-dry-rose absolute left-0 right-0 width-[100%] opacity-90">
+            <div class="flex flex-wrap w-[40%] mx-auto justify-between">
+                <div class="discover-kering p-[20px]">
+                    <div class="title flex justify-center p-[10px]">
+                        <h2><a href="./about/history.html">HISTORY</a></h2>
+                    </div>
+                </div>
+                <div class="Culture-heritage p-[20px]">
+                    <div class="title flex justify-center p-[10px]">
+                        <h2><a href="./about/governance.html">GOVERNANCE</a></h2>
+                    </div>
+                </div>
+                <div class="discover-kering p-[20px]">
+                    <div class=" flex justify-center p-[10px]">
+                        <h2><a href="./about/contacts.html">CONTACTS</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brands brands-menu hidden drop-down-menu bg-dry-rose absolute left-0 right-0 z-[999] opacity-90">
+            <div class="flex flex-wrap w-[20%] mx-auto justify-between">
+                <div class="couture-leather p-[20px]">
+                    <div class="title flex justify-center p-[10px]">
+                        <h2><a href="">BEAUTY</a></h2>
+                    </div>
+                </div>
+                <div class="jewelry p-[20px]">
+                    <div class="title flex justify-center p-[10px]">
+                        <h2><a href="index.html">HOME</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto w-[90%]">
+        <!-- tablet nav bar-->
+        <div class="header hidden md:block xl:hidden mx-auto">
+            <div class="upper flex justify-between items-center text-[12px] py-[10px]">
+                <div class="price-lang flex">
+                    <div>
+                        <h6>Share Price</h6>
+                        <h6>price</h6>
+                    </div>
+                </div>
+                <a href="">KERING</a>
+                <div class="right-nav flex item-between gap-[10px]">
+                    <span>Search</span>
+                    <span>Share</span>
+                    <h6>En ></h6>
+                </div>
+            </div>
+            <div class="nav-bar text-[12px]">
+                <ul class="flex items-center justify-between">
+                    <li class="about-hover p-[10px]"><a href="">ABOUT</a></li>
+                    <li class="brands p-[10px]"><a href="">BRANDS</a></li>
+                    <li class="news p-[10px]"><a href="">NEWS</a></li>
+                    <li class="investor-relations p-[10px]"><a href="">INVESTOR RELATIONS</a></li>
+                    <li class="career p-[10px]"><a href="">CAREER</a></li>
+                    <li class="press p-[10px]"><a href="">CLIENT PORTAL</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- mobile -->
+        <div class="header md:hidden mx-auto h-[70px]">
+            <div class="upper flex justify-between py-[20px]">
+                <!-- <div class="burger-container">
+                    <div class="top-bread"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bread"></div>
+                </div> -->
+                <!-- <span class="drop-dawn">X</span> -->
+                <div class="space-y-2 drop-dawn">
+                    <span class="block w-8 h-1 bg-gray-600"></span>
+                    <span class="block w-8 h-1 bg-gray-600"></span>
+                    <span class="block w-8 h-1 bg-gray-600"></span>
+                </div>
+                <a href="">KERING</a>
+                <div class="right-nav flex item-between gap-[10px]">
+                    <h6>En ></h6>
+                    <span>Search</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile dropdown -->
+        <div class="nav-curtain absolute overflow-hidden left-0 right-0 z-[999]">
+            <div class="mobile-main-nav">
+                <div class="main-nav-menu py-[20px] bg-dry-rose">
+                    <div class="flex justify-center p-[10px]">
+                        <span>ABOUT</span>
+                    </div>
+                    <div class="flex justify-center p-[10px]">
+                        <span>BRANDS</span>
+                    </div>
+                    <div class="flex justify-center p-[10px]">
+                        <span>NEWS</span>
+                    </div>
+                    <div class="flex justify-center p-[10px]">
+                        <span>INVESTOR RELATIONS</span>
+                    </div>
+                    <div class="flex justify-center p-[10px]">
+                        <span>CAREER</span>
+                    </div>
+                    <div class="flex justify-center p-[10px]e">
+                        <span>CLIENT PORTAL</span>
+                    </div>
+               </div>
+               <div class="menu-footer py-[20px] bg-white">
+                   <div class="share-price flex justify-center">
+                        <h6>SHARE PRICE</h6>
+                        <H6>PRICE</H6>
+                   </div>
+                   <div class="socmed flex justify-center">
+                        <span>icons</span>    
+                        <span>icons</span>   
+                        <span>icons</span>   
+                        <span>icons</span>   
+                        <span>icons</span>   
+                        <span>icons</span>   
+                   </div>
+                   <div class="language">
+                        <ul class="flex justify-center">
+                            <li>EN</li>
+                            <li>FR</li>
+                            <li>IT</li>
+                            <li>CH</li>
+                            <li>JP</li>
+                        </ul>
+                   </div>
+               </div>
+            </div>
+        </div>
+
+        <!--Hero Banner-->
+        <div class="hero-section mx-auto relative">
+            <div class="hero-banner relative">
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/hero-image.jpg)">
+                    <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/pexels-andrea-piacquadio-975250.jpg)">
+                     <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/pexels-arina-krasnikova-5418886.jpg)">
+                     <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/pexels-gustavo-fring-3865912.jpg)">
+                     <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/hero-image.jpg)">
+                    <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/pexels-andrea-piacquadio-975250.jpg)">
+                     <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/pexels-arina-krasnikova-5418886.jpg)">
+                     <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/pexels-gustavo-fring-3865912.jpg)">
+                     <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>    
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/hero-image.jpg)">
+                    <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/pexels-andrea-piacquadio-975250.jpg)">
+                     <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/pexels-arina-krasnikova-5418886.jpg)">
+                     <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/pexels-gustavo-fring-3865912.jpg)">
+                     <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>    
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/hero-image.jpg)">
+                    <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>
+                <div class="banner-item relative text-black w-[100%] h-[500px] bg-cover" style="background-image: url(../img/pexels-andrea-piacquadio-975250.jpg)">
+                     <div class="banner absolute top-[35%] right-[42%] flex flex-col items-center">
+                        <h1 class="text-white text-[70px]">Lorem</h1>
+                        <button class="text-white discover-button text-[20px] border-solid border-2 py-[10px] px-[70px]">Discover</button>
+                    </div>
+                </div>         
+            </div>
+            <div class="prev-button absolute top-[40%] z-[99] w-[20px]">
+                <svg width="20" height="106" viewBox="0 0 58 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M56.5355 4.62385C57.5118 3.64754 57.5118 2.06462 56.5355 1.08831C55.5592 0.112002 53.9763 0.112001 53 1.08831L56.5355 4.62385ZM53 1.08831L2.0883 52L5.62384 55.5355L56.5355 4.62385L53 1.08831Z" fill="#ffffff"/>
+                    <path d="M51.2322 104.679C52.2085 105.656 53.7915 105.656 54.7678 104.679C55.7441 103.703 55.7441 102.12 54.7678 101.144L51.2322 104.679ZM54.7678 101.144L3.85608 50.2322L0.32055 53.7678L51.2322 104.679L54.7678 101.144Z" fill="#ffffff"/>
+                </svg>                    
+            </div>
+            <div class="next-button absolute top-[40%] right-0 z-[99] w-[20px]">
+                <svg width="20" height="106" viewBox="0 0 58 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.23223 4.76777C0.255922 3.79146 0.255922 2.20854 1.23223 1.23223C2.20854 0.255922 3.79146 0.255922 4.76777 1.23223L1.23223 4.76777ZM4.76777 1.23223L55.6795 52.1439L52.1439 55.6795L1.23223 4.76777L4.76777 1.23223Z" fill="#ffffff"/>
+                    <path d="M6.53553 104.823C5.55922 105.8 3.97631 105.8 2.99999 104.823C2.02368 103.847 2.02368 102.264 2.99999 101.288L6.53553 104.823ZM2.99999 101.288L53.9117 50.3761L57.4472 53.9117L6.53553 104.823L2.99999 101.288Z" fill="#ffffff"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Collage -->
+        <div class="collage-section pt-[80px]">
+            <div class="upper-collage collage flex h-[500px] overflow-hidden">
+                <div class="houses-image-container w-[30%]">
+                    <img src="../img/daniel-koponyas-Xa-na3dWCKw-unsplash.jpg" alt="">
+                </div>
+                <div class="upper-right-collage w-[70%]">
+                    <div class="right-top-container flex h-[250px]">
+                        <div class="w-[20%] flex justify-center overflow-hidden">
+                            <img class="object-cover w-[100%] h-[100%]" src="../img/ladies-evening-dress-elegant-women-long-gown.jpg" alt="">
+                        </div>
+                        <div class="w-[80%] flex justify-center overflow-hidden">
+                            <img class="length-wise object-cover w-[100%] h-[100%]" src="../img/pexels-arina-krasnikova-5418886.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="right-bottome-container flex h-[250px]">
+                        <div class="w-[80%] flex justify-center overflow-hidden">
+                            <img class="length-wise object-cover w-[100%] h-[100%]" src="../img/pexels-gustavo-fring-3865912.jpg" alt="">
+                        </div>
+                        <div class="w-[20%] flex justify-center overflow-hidden">
+                            <img class="object-cover w-[100%] h-[100%]" src="../img/women-trying-clothes-store.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-collage flex h-[500px] overflow-hidden">
+                <div class="left-lower-collage w-[33%]">
+                    <div class="">
+                        <img class="object-cover w-[100%] h-[100%]" src="../img/pexels-matheus-bertelli-3080665.jpg" alt="">
+                        <img class="object-cover w-[100%] h-[100%]" src="../img/pexels-nicola-barts-7927360.jpg" alt="">
+                    </div>
+                </div>
+                <div class="mid-lower-collage w-[34%]">
+                    <div class="">
+                        <img class="object-cover w-[100%] h-[100%]" src="../img/fabien-bellanger-VpVAG_h20LU-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right-lower-collage w-[33%]">
+                    <div class="">
+                        <img class="object-cover w-[100%] h-[100%]" src="../img/pexels-mart-production-7679740.jpg" alt="">
+                        <img class="object-cover w-[100%] h-[100%]" src="../img/pexels-gustavo-fring-3865912.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Talent section-->
+        <div class="talent-section pt-[20px]">
+            <div class="talent-container h-[500px] bg-cover flex flex-col items-center pt-[10px]" style="background-image: url(../img/hero-image.jpg)">
+                <h2 class="text-white">Talent</h2>
+                <div class="search-box-container flex pt-[210px]">
+                    <input class="px-[20px] h-[60px] w-[400px] items-center" type="search-bar" placeholder="ENTER JOB TITLE KEYWORD OR MAISON">
+                    <button class="px-[50px] bg-dry-rose">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Finance section-->
+        <div class="finance-section pt-[20px]">
+            <div class="finance-container h-[500px] bg-cover flex flex-col items-center pt-[10px]" style="background-image: url(../img/claudio-schwarz-vmAvjw6SaV4-unsplash.jpg)">
+                <h2 class="text-white">Finance</h2>
+                <div class="text-data-container flex justify-between pt-[130px] w-[100%] items-center">
+                    <div class="finance-key-figures h-[200px] w-[300px] bg-dry-rose p-[20px] flex flex-col items-center justify-center">
+                        <h2>KEY FIGURES</h2>
+                        <p>group's key financial data.</p>
+                    </div>
+                    <div class="finance-income-container">
+                        <div class="circle-image">
+
+                        </div>
+                        <div class="income-container text-white text-center">
+                            <h2>376,60</h2>
+                            <p>SHARE PRICE</p>
+                        </div>
+                    </div>
+                    <div class="finance-kering-share h-[200px] w-[300px] bg-dry-rose p-[20px] flex flex-col items-center justify-center">
+                        <h2>KERING SHARE</h2>
+                        <p class="text-center">All information about the kering share (characteristics, real time quotes, dividend history)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Sustainability section-->
+        <div class="sustainability-section pt-[20px]">
+            <div class="sustainability-container h-[500px] bg-cover flex flex-col items-center pt-[10px]" style="background-image: url(../img/neom-9hWJs7iblh8-unsplash.jpg)">
+                <h2 class="text-white">SUSTAINABILITY</h2>
+            </div>
+        </div>
+
+        <!--footer section-->
+        <div class="footer-section text-center items-center pt-[20px]">
+            <div class="footer-container py-[50px] bg-dry-rose items-center flex flex-col gap-[10px]">
+                <h2>KERING</h2>
+                <ul class="flex justify-center gap-[4px]">
+                   <li>icon</li> 
+                   <li>icon</li>
+                   <li>icon</li>
+                   <li>icon</li>
+                   <li>icon</li>
+                   <li>icon</li>
+                </ul>
+                <ul class="flex justify-center gap-[4px]">
+                    <li>SITEMAP</li>
+                    <li>CONTACT US</li>
+                    <li>LEGAL</li>
+                    <li>CREDITS</li>
+                    <li>PRIVACY POLICY</li>
+                    <li>COOKIES SETTINGS</li>
+                </ul>
+                <P>KERING 2024. ALL RIGHTS RESERVE</P>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

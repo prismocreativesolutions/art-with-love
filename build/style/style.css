@@ -1,0 +1,67 @@
+.nav-curtain {
+    height: 0;
+    transition: .2s all  ease-in-out;
+}
+
+.lang-nav {
+    width: 0;
+    transition: .2s all  ease-in-out;
+}
+
+.drop-down-menu ul li {
+    font-size: 14px;
+}
+
+.header {
+    transition: all .3s ease-in-out
+}
+
+.show-header {
+    opacity: 1;
+}
+
+.hide-header {
+    opacity: 0;
+}
+
+.next-button {
+    cursor: pointer;
+    right: 40px;
+}
+
+.prev-button {
+    cursor: pointer;
+    left: 40px
+}
+
+/* .slick-dots {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-top: -12px;
+    background-color: #F1E4DB;
+    align-items: center;
+}
+
+.slick-dots li button {
+    background-color: #ffffff;
+    height: 50px;
+    width: 50px;
+    font-size: 12px;
+    border-radius: 100px;
+}
+
+.slick-dots li button:hover {
+    border: 2px solid #F1E4DB;
+    box-shadow: 0 0 50px 15px #ffffff
+} */
+
+#slick-slide-control01  {
+    /* background: url(../img/pexels-andrea-piacquadio-975250.jpg); */
+    /* background-color: #ffffff;
+    height: 50px;
+    width: 50px;
+    font-size: 12px;
+    border-radius: 100px; */
+    /* more CSS */
+}
